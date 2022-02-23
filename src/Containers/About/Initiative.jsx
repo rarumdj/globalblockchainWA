@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import Feature from "../../Components/Feature";
 import blockGirl from "../../assets/blockgirl.png";
 import chainGirl from "../../assets/girlchain.png";
@@ -72,9 +73,19 @@ function Initiative() {
   return (
     <div className="pb-16 px-8 md:pb-24 md:px-24">
       <div className="mb-12">
-        <h1 className="gradient__text text-2xl lg:text-6xl font-extrabold leading-tight">
+        <motion.h1
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.7 }}
+          variants={{
+            visible: { opacity: 1, y: 0 },
+            hidden: { opacity: 0, y: 50 },
+          }}
+          className="gradient__text text-2xl lg:text-6xl font-extrabold leading-tight"
+        >
           GBWA Initiatives
-        </h1>
+        </motion.h1>
       </div>
       {InitiativeList.map((feature, i) => (
         <Feature

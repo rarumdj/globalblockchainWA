@@ -1,8 +1,19 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 function Feature({ title, list, image, link, cName }) {
   return (
-    <div className="flex flex-col-reverse lg:flex-row w-full h-full footer__bg mb-4">
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      transition={{ duration: 0.5, delay: 0.8, ease: "easeInOut" }}
+      variants={{
+        visible: { opacity: 1, y: 0 },
+        hidden: { opacity: 0, y: 50 },
+      }}
+      className="flex flex-col-reverse lg:flex-row w-full h-full footer__bg mb-4"
+    >
       <div
         className={`flex flex-col flex-initial justify-between w-full h-full py-10 px-12 ${cName}`}
       >
@@ -32,7 +43,7 @@ function Feature({ title, list, image, link, cName }) {
           className="w-full h-[42vh] lg:h-full object-cover object-center"
         />
       </div>
-    </div>
+    </motion.div>
   );
 }
 

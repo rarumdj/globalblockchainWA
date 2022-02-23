@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import "./App.css";
 import NavBar from "./Containers/NavBar/NavBar";
@@ -10,18 +10,22 @@ import Partnership from "./Pages/Partnership";
 import Projects from "./Pages/Projects";
 import ReadMore from "./Pages/ReadMore";
 
-const App = () => {
-  const scrollRef = useRef(null);
-  const routePath = useLocation();
+function ScrollToTop() {
+  const { pathname } = useLocation();
 
   useEffect(() => {
-    scrollRef.current.scrollTo(0, 0);
-  }, [routePath]);
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
+  return null;
+}
+
+const App = () => {
   return (
     <div className="App">
       <NavBar />
-      <div className="h-screen overflow-y-scroll smoo" ref={scrollRef}>
+      <div className="h-screen scroll-smooth">
+        <ScrollToTop />
         <Routes>
           <Route path="/*" element={<Home />}></Route>
           <Route path="/about" element={<About />}></Route>
