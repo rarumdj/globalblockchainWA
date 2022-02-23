@@ -9,19 +9,19 @@ function Community() {
     <div className="pb-16 px-8 md:pb-24 md:px-24">
       <div className="grid lg:grid-cols-2 gap-6 items-center justify-center">
         <motion.div
-          initial={{ x: -700 }}
+          initial={{ opacity: 0, y: 100 }}
           viewport={{ once: true }}
-          whileInView={{ x: 0 }}
-          transition={{ duration: 0.8, delay: 0.5 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 1 }}
           className="lg:order-first order-last"
         >
           <img src={featureImg} alt="" />
         </motion.div>
         <motion.div
-          initial={{ x: 700 }}
+          initial={{ opacity: 0, y: 100 }}
           viewport={{ once: true }}
-          whileInView={{ x: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 1 }}
         >
           <h1 className="gradient__text text-2xl lg:text-6xl font-extrabold leading-tight">
             GBWA Creating A Community Of Practice

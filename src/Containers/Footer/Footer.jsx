@@ -4,7 +4,7 @@ import MenuItems from "../NavBar/MenuItems";
 
 function Footer() {
   return (
-    <div className="flex flex-col">
+    <div id="contact" className="flex flex-col">
       <div className="footer__bg flex flex-col py-16 justify-center items-center">
         <h1 className="gradient__text text-3xl sm:text-5xl mx-8 font-bold mb-8">
           Get in touch

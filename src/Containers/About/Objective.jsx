@@ -137,7 +137,7 @@ function Objective() {
             </div>
           </div>
           <motion.div
-            initial={{ x: 200 }}
+            initial={{ x: 50 }}
             whileInView={{ x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.7 }}

@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import MenuItems from "./MenuItems";
 import "./NavBar.css";
 import logo from "../../assets/gb_logo.png";
 
 function NavBar() {
+  const { pathname } = useLocation();
   const [click, setClick] = useState(false);
 
   const handleClick = () => {
     setClick(!click);
   };
-
 
   const [stickyClass, setStickyClass] = useState("");
 
@@ -54,16 +54,16 @@ function NavBar() {
           );
         })}
         <li>
-          <a href="/contact" className="nav-link-mobile">
+          <a href={`${pathname}#contact`} className="nav-link-mobile">
             Contact
           </a>
         </li>
       </ul>
       <a
-        href="/button"
+        href={`${pathname}#contact`}
         className="hidden lg:block py-2 px-4 rounded-md bg-red-600 text-white hover:bg-transparent hover:bg-red-500 hover:transition-all duration-200 ease-in-out"
       >
-        Contact us
+        Contact
       </a>
     </nav>
   );

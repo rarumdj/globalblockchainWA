@@ -1,8 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 import ai from "../../assets/ai.png";
+import { useLocation } from "react-router-dom";
 
 function Header() {
+  const { pathname } = useLocation();
+
   return (
     <div className="flex flex-col md:flex-row mt-0 mb-12 mx-0 lg:m-0 py-24 px-8 md:py-24 md:px-24">
       <div className="flex flex-1 flex-col justify-center items-start mr-2">
@@ -32,7 +35,7 @@ function Header() {
           className="flex w-full mx-0 mt-8 mb-4"
         >
           <a
-            href="/contact"
+            href={`${pathname}#contact`}
             className="py-2 border-none outline-none px-4 bg-red-600 text-white rounded-md hover:bg-transparent hover:bg-red-500 hover:transition-all duration-200 ease-in-out"
           >
             Contact us
