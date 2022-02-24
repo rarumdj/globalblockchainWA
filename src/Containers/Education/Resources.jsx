@@ -25,23 +25,37 @@ const ResourcesItem = [
 ];
 const Resources = () => {
   return (
-    <div className="py-4 px-8 md:py-24 md:px-24">
-      <div className="p-4 border-2 border-blue-200 rounded-md">
-        <h1 className="gradient__text text-2xl font-bold">Free Resources</h1>
+    <div className="py-8 px-8 md:py-24 md:px-24">
+      <div className="p-2 sm:p-4 border-2 border-blue-200 rounded-md">
+        <h1 className="gradient__text text-lg sm:text-2xl font-bold">
+          Free Resources
+        </h1>
       </div>
 
-        {ResourcesItem.map((items, i)=> (
-            <div key={i} className="footer__bg rounded-md flex h-auto gap-6 justify-between p-6 my-8">
-        <div className="">
-          <h1 className="gradient__text text-2xl mb-6 font-bold">{items.title}</h1>
-          <p className="text-blue-200">{items.para}</p>
+      {ResourcesItem.map((items, i) => (
+        <div
+          key={i}
+          className="footer__bg flex-col lg:flex-row rounded-md flex h-auto gap-6 justify-between p-6 my-6 sm:my-8"
+        >
+          <div className="basis-3/6">
+            <h1 className="gradient__text text-2xl mb-6 font-bold">
+              {items.title}
+            </h1>
+            <p className="text-sm md:text-base text-blue-200">{items.para}</p>
+          </div>
+          <div className="basis-3/6">
+            <div className="relative pt-[56.25%]">
+              <ReactPlayer
+                className="absolute left-0 top-0"
+                width="100%"
+                height="100%"
+                url={items.tubelink}
+                // controls={false}
+              />
+            </div>
+          </div>
         </div>
-        <div className="">
-          <ReactPlayer className="object-contain" url={items.tubelink} />
-        </div>
-      </div>
-        ))}
-
+      ))}
     </div>
   );
 };

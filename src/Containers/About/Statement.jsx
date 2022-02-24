@@ -11,7 +11,7 @@ function Statement() {
         className="flex flex-col w-full justify-center items-center "
       >
         <h2 className="gradient__text text-2xl lg:text-5xl font-extrabold text-center md:mx-16">
-          At gbwa we envision a world where girls feel confident to pursue
+          At GBWA we envision a world where girls feel confident to pursue
           blockchain careers and are equally represented in the tech workforce.
         </h2>
         <p className="text-center text-blue-200 text-sm md:text-base  mt-2">

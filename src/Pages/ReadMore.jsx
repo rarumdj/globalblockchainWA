@@ -22,6 +22,7 @@ const TheFact = {
   ],
   image: factImg,
   link: "",
+  id: "fact",
   cName: "",
 };
 
@@ -37,6 +38,7 @@ const TheConcern = {
   ],
   image: concernImg,
   link: "",
+  id: "concerns",
   cName: "lg:order-last",
 };
 
@@ -62,6 +64,7 @@ const TheRural = {
   ],
   image: ruralImg,
   link: "",
+  id: "rural",
   cName: "",
 };
 
@@ -82,6 +85,7 @@ function ReadMore() {
             list={TheFact.list}
             image={TheFact.image}
             link={TheFact.link}
+            idn={TheFact.id}
             cName={TheFact.cName}
           />
         </div>
@@ -105,6 +109,7 @@ function ReadMore() {
             list={TheConcern.list}
             image={TheConcern.image}
             link={TheConcern.link}
+            idn={TheConcern.id}
             cName={TheConcern.cName}
           />
         </div>
@@ -118,6 +123,7 @@ function ReadMore() {
             list={TheRural.list}
             image={TheRural.image}
             link={TheRural.link}
+            idn={TheRural.id}
             cName={TheRural.cName}
           />
         </div>

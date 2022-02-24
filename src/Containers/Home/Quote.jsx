@@ -20,7 +20,7 @@ function Quote() {
           For Them"
         </h2>
         <p className="text-center text-white text-sm md:text-xl font-bold mt-2">
-          -Raj
+          -Raj Kapoor
         </p>
       </motion.div>
     </div>

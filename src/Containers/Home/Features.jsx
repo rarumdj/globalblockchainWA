@@ -14,7 +14,8 @@ const FeatureList = [
       `The gender gap does not only remain but is  actually growing. The percentage of women with  Tech degrees in Africa has dropped from 25% to 24%`,
     ],
     image: factImg,
-    link: "/readmore",
+    link: "/readmore#fact",
+    id: 'fact',
     cName: "",
   },
   {
@@ -26,7 +27,8 @@ const FeatureList = [
       `Girls & Women face bias when choosing a career.`,
     ],
     image: concernImg,
-    link: "/readmore",
+    link: "/readmore#concerns",
+    id: 'concerns',
     cName: "lg:order-last",
   },
   {
@@ -38,7 +40,8 @@ const FeatureList = [
       `Lack of educational institutions near villages makes it  difficult for girls to travel long distances.`,
     ],
     image: ruralImg,
-    link: "/readmore",
+    link: "/readmore#rural",
+    id: 'rural',
     cName: "",
   },
 ];
@@ -53,6 +56,7 @@ function Features() {
             image={feature.image}
             link={feature.link}
             cName={feature.cName}
+            idn={feature.id}
             key={i}
           />
         ))}

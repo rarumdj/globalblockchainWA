@@ -63,6 +63,7 @@ const PartnersLogo = () => {
           variants={imgVarient}
           initial="hidden"
           whileHover="animate"
+          whileTap="animate"
         >
           <img src={item.image} alt="" />
         </motion.div>

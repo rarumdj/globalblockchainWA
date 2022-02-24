@@ -18,6 +18,7 @@ function IconCards({ icon, title }) {
       variants={cardVarient}
       initial="hidden"
       whileHover="animate"
+      whileTap="animate"
       className="footer__bg h-56 w-full p-4 rounded-md"
     >
       <div className="flex flex-col h-full m-auto text-center justify-evenly items-center">

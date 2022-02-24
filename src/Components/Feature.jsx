@@ -1,7 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { NavLink } from "react-router-dom";
 
-function Feature({ title, list, image, link, cName }) {
+function Feature({ title, list, image, link, cName, idn }) {
   return (
     <motion.div
       initial="hidden"
@@ -13,6 +14,7 @@ function Feature({ title, list, image, link, cName }) {
         hidden: { opacity: 0, y: 50 },
       }}
       className="flex flex-col-reverse lg:flex-row w-full h-full footer__bg mb-4"
+      id={idn}
     >
       <div
         className={`flex flex-col flex-initial justify-between w-full h-full py-10 px-12 ${cName}`}
@@ -27,14 +29,14 @@ function Feature({ title, list, image, link, cName }) {
             </li>
           ))}
         </ul>
-        <a
-          href={link && link}
+        <NavLink
+          to={link}
           className={`bg-red-600 p-2 text-white cursor-pointer w-28 max-w-x ${
             link ? "" : "hidden"
           }`}
         >
           Read More{" >"}
-        </a>
+        </NavLink>
       </div>
       <div className={`w-full lg:w-80 min-h-max lg:max-h-screen flex-none`}>
         <img

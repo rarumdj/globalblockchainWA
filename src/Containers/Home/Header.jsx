@@ -1,13 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
-import ai from "../../assets/ai.png";
+import ai from "../../assets/team/landing.png";
 import { useLocation } from "react-router-dom";
 
 function Header() {
   const { pathname } = useLocation();
 
   return (
-    <div className="flex flex-col md:flex-row mt-0 mb-12 mx-0 lg:m-0 py-24 px-8 md:py-24 md:px-24">
+    <div className="flex flex-col md:flex-row mt-0 mb-12 mx-0 lg:m-0 py-24 px-8 md:py-24 md:px-24 min-h-screen md:max-h-screen">
       <div className="flex flex-1 flex-col justify-center items-start mr-2">
         <motion.h1
           initial={{ x: -300 }}
@@ -42,8 +42,20 @@ function Header() {
           </a>
         </motion.div>
       </div>
-      <div className="flex flex-1 items-center justify-center">
-        <img src={ai} alt="ai" className="lg:w-100 lg:h-100 w-100" />
+      <div className="flex flex-1 items-center mt-4 md:mt-0 justify-center">
+        <motion.img
+          initial={{ y: -20 }}
+          animate={{ y: 20 }}
+          transition={{
+            duration: 1,
+            yoyo: Infinity,
+            delay: 1,
+            ease: "easeInOut",
+          }}
+          src={ai}
+          alt="ai"
+          className="max-h-[16rem] md:max-h-full"
+        />
       </div>
     </div>
   );

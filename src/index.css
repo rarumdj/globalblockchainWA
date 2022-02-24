@@ -17,6 +17,6 @@
   --color-subtext: #ff8a71;
 }
 
-/* .hide-scrollbar::-webkit-scrollbar {
+.hide-scrollbar::-webkit-scrollbar {
   display: none;
-} */
+}

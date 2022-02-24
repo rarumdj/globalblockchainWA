@@ -23,8 +23,8 @@ function About() {
       <Community />
       <Objective />
       <Initiative />
-      <Directors />
       <Trustees />
+      <Directors />
       <PartnersIcon />
       <Footer />
     </div>
