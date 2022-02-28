@@ -1,9 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
 import ai from "../../assets/team/landing.png";
+import imgblur from "../../assets/team/landingBlur.png";
 import { useLocation } from "react-router-dom";
+import UseProgressiveImg from "../../Components/UseProgressiveImg";
 
 function Header() {
+  const [src, { blur }] = UseProgressiveImg(imgblur, ai);
+
   const { pathname } = useLocation();
 
   return (
@@ -23,10 +27,7 @@ function Header() {
           transition={{ duration: 2 }}
           className="mt-4 text-blue-100 text-sm md:text-base"
         >
-          Yet bed any for travelling assistance indulgence unpleasing. Not
-          thoughts all exercise blessing. Indulgence way everything joy
-          alteration boisterous the attachment. Party we years to order allow
-          asked of.
+          Empowering Women Block by Block.
         </motion.p>
         <motion.div
           initial={{ x: -300 }}
@@ -52,7 +53,11 @@ function Header() {
             delay: 1,
             ease: "easeInOut",
           }}
-          src={ai}
+          src={src}
+          style={{
+            filter: blur ? "blur(20px)" : "none",
+            transition: blur ? "none" : "filter 0.3s ease-out",
+          }}
           alt="ai"
           className="max-h-[16rem] md:max-h-full"
         />

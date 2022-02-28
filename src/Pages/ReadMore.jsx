@@ -5,6 +5,8 @@ import factImg from "../assets/img-facts.jpg";
 import concernImg from "../assets/img-concerns.jpg";
 import ruralImg from "../assets/img-rural.jpg";
 import genderDriveImg from "../assets/img-genderdrive.jpg";
+import blurimg from "../assets/divieBlur.jpg";
+import UseProgressiveImg from "../Components/UseProgressiveImg";
 
 const TheFact = {
   title: "The Facts",
@@ -69,6 +71,8 @@ const TheRural = {
 };
 
 function ReadMore() {
+  const [src, { blur }] = UseProgressiveImg(blurimg, genderDriveImg);
+
   useEffect(() => {
     document.title = "GBWA - ReadMore";
   }, []);
@@ -96,7 +100,15 @@ function ReadMore() {
             </h1>
           </div>
           <div className="flex items-center justify-center w-full h-full">
-            <img src={genderDriveImg} alt="divide" className="object-contain" />
+            <img
+              src={src}
+              alt="divide"
+              className="object-contain"
+              style={{
+                filter: blur ? "blur(20px)" : "none",
+                transition: blur ? "none" : "filter 0.3s ease-out",
+              }}
+            />
           </div>
         </div>
         <div>

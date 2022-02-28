@@ -3,22 +3,28 @@ import Team from "../../Components/Team";
 import modupe from "../../assets/team/modupe.jpg";
 import tolani from "../../assets/team/tolani.jpg";
 import ade from "../../assets/team/ade.jpg";
+import modupeBlur from "../../assets/team/blur/modupe.jpg";
+import tolaniBlur from "../../assets/team/blur/tolani.jpg";
+import adeBlur from "../../assets/team/blur/ade.jpg";
 
 const DirectorsDetails = [
   {
     name: "Modupe Ativie",
     position: "Member",
     image: modupe,
+    imageBlur: modupeBlur,
   },
   {
     name: "Tolani Jemi-Alade",
     position: "Member",
     image: tolani,
+    imageBlur: tolaniBlur,
   },
   {
     name: "Adedeji Owonibi",
     position: "Member",
     image: ade,
+    imageBlur: adeBlur,
   },
 ];
 
@@ -37,6 +43,7 @@ function Trustees() {
             name={item.name}
             position={item.position}
             image={item.image}
+            blurImg={item.imageBlur}
           />
         ))}
       </div>

@@ -9,6 +9,7 @@ import Footer from "../Containers/Footer/Footer";
 import Directors from "../Containers/About/Directors";
 import Trustees from "../Containers/About/Trustees";
 import PartnersIcon from "../Containers/About/PartnersIcon";
+import Staff from "../Containers/About/Staff";
 
 function About() {
   useEffect(() => {
@@ -25,6 +26,7 @@ function About() {
       <Initiative />
       <Trustees />
       <Directors />
+      <Staff />
       <PartnersIcon />
       <Footer />
     </div>

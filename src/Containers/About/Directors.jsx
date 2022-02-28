@@ -8,47 +8,63 @@ import maria from "../../assets/team/maria.jpg";
 import sha from "../../assets/team/sha.jpg";
 import she from "../../assets/team/she.jpg";
 import raj from "../../assets/team/raj.jpg";
+import elaBlur from "../../assets/team/blur/ela.jpg";
+import hamBlur from "../../assets/team/blur/ham.jpg";
+import lauraBlur from "../../assets/team/blur/laura.jpg";
+import marBlur from "../../assets/team/blur/mar.jpg";
+import mariaBlur from "../../assets/team/blur/maria.jpg";
+import shaBlur from "../../assets/team/blur/sha.jpg";
+import sheBlur from "../../assets/team/blur/she.jpg";
+import rajBlur from "../../assets/team/blur/raj.jpg";
 
 const DirectorsDetails = [
   {
     name: "Elaine Bannerman",
     position: "Member",
     image: ela,
+    imageBlur: elaBlur,
   },
   {
     name: "Haimanot Bobosha",
     position: "Member",
     image: ham,
+    imageBlur: hamBlur,
   },
   {
     name: "Raj Kapoor",
     position: "Member",
     image: raj,
+    imageBlur: rajBlur,
   },
   {
     name: "Maria Eneva-Olms",
     position: "Member",
     image: maria,
+    imageBlur: marBlur,
   },
   {
     name: "Laura Lazar",
     position: "Member",
     image: laura,
+    imageBlur: lauraBlur,
   },
   {
     name: "Sahebe Mehmannavaz",
     position: "Member",
     image: sha,
+    imageBlur: shaBlur,
   },
   {
     name: "Mara Hartsoerger",
     position: "Member",
     image: mar,
+    imageBlur: marBlur,
   },
   {
     name: "Shelle Fantastic",
     position: "member",
     image: she,
+    imageBlur: sheBlur,
   },
 ];
 
@@ -67,6 +83,7 @@ function Directors() {
             name={item.name}
             position={item.position}
             image={item.image}
+            blurImg={item.imageBlur}
           />
         ))}
       </div>

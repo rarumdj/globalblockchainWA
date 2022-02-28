@@ -32,7 +32,9 @@ function NavBar() {
       className={`NavbarItems gradient__bg fixed top-0 left-0 right-0 ${stickyClass}`}
     >
       <div className="Navbar-logo">
-        <img className="w-10" src={logo} alt="logo" />
+        <NavLink to={"/"}>
+          <img className="w-10" src={logo} alt="logo" />
+        </NavLink>
       </div>
       <div className="Menu-icon" onClick={handleClick}>
         <i className={click ? "fas fa-times" : "fas fa-bars"}></i>
