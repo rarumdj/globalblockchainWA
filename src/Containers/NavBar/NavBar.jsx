@@ -23,14 +23,13 @@ function NavBar() {
     if (window !== undefined) {
       let windowHeight = window.scrollY;
       // window height changed for the demo
-      windowHeight > 80 ? setStickyClass("sticky-nav") : setStickyClass("");
+      windowHeight > 80 ? setStickyClass("bg-[#040c18]") : setStickyClass("");
     }
   };
 
   return (
     <nav
-      className={`NavbarItems gradient__bg fixed top-0 left-0 right-0 ${stickyClass}`}
-    >
+      className={`NavbarItems gradient__bgs fixed top-0 left-0 right-0 bg-opacity-50 backdrop-blur-md ${stickyClass}`}>
       <div className="Navbar-logo">
         <NavLink to={"/"}>
           <img className="w-10" src={logo} alt="logo" />
@@ -48,8 +47,7 @@ function NavBar() {
                   isActive ? items.cNameActive : items.cName
                 }
                 to={items.url}
-                onClick={() => setClick(false)}
-              >
+                onClick={() => setClick(false)}>
                 {items.title}
               </NavLink>
             </li>
@@ -63,8 +61,7 @@ function NavBar() {
       </ul>
       <a
         href={`${pathname}#contact`}
-        className="hidden lg:block py-2 px-4 rounded-md bg-red-600 text-white hover:bg-transparent hover:bg-red-500 hover:transition-all duration-200 ease-in-out"
-      >
+        className="hidden lg:block py-2 px-4 rounded-md bg-red-600 text-white hover:bg-transparent hover:bg-red-500 hover:transition-all duration-200 ease-in-out">
         Contact
       </a>
     </nav>

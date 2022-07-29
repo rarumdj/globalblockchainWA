@@ -11,7 +11,7 @@ function Home() {
   }, []);
   return (
     <>
-      <div className="gradient__bg">
+      <div className="gradient__bg__header">
         <Header />
       </div>
       <Quote />

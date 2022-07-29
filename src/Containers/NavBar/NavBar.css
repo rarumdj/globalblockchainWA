@@ -41,13 +41,13 @@
 }
 
 .nav-link:hover {
-  border-bottom: solid 4px #81afdd;
+  border-bottom: solid 3px #b80202;
   color: #fff;
   transition: all 0.2s ease-out;
 }
 
 .nav-linkActive {
-  border-bottom: solid 4px #81afdd;
+  border-bottom: solid 3px #b80202;
   transition: all 0.2s ease-out;
   color: #fff;
   text-decoration: none;

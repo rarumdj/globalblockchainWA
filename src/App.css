@@ -7,12 +7,59 @@
 }
 
 body {
-  background: var(--color-bg);
+  background: #fff;
 }
 
 a {
   color: unset;
   text-decoration: none;
+}
+
+.gradient__bg__header {
+  /* ff 3.6+ */
+  background: -moz-radial-gradient(
+      circle at 3% 25%,
+      rgba(0, 42, 83, 1) 0%,
+      rgba(4, 12, 24, 1) 100%
+    ),
+    url(./assets/wave.png);
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-radial-gradient(
+      circle at 3% 25%,
+      rgba(0, 42, 83, 1) 0%,
+      rgba(4, 12, 24, 1) 100%
+    ),
+    url(./assets/wave.png);
+
+  /* opera 11.10+ */
+  background: -o-radial-gradient(
+      circle at 3% 25%,
+      rgba(0, 42, 83, 1) 0%,
+      rgba(4, 12, 24, 1) 100%
+    ),
+    url(./assets/wave.png);
+
+  /* ie 10+ */
+  background: -ms-radial-gradient(
+      circle at 3% 25%,
+      rgba(0, 42, 83, 1) 0%,
+      rgba(4, 12, 24, 1) 100%
+    ),
+    url(./assets/wave.png);
+
+  /* global 92%+ browsers support */
+  background: radial-gradient(
+      circle at 3% 25%,
+      rgba(0, 42, 83, 1) 0%,
+      rgba(4, 12, 24, 1) 100%
+    ),
+    url(./assets/wave.png);
+
+  /* background-image: url(./assets/wave.png) ; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
 }
 
 .gradient__bg {
@@ -50,6 +97,8 @@ a {
     rgba(0, 42, 83, 1) 0%,
     rgba(4, 12, 24, 1) 100%
   );
+  background-blend-mode: overlay;
+
 }
 
 .gradient__text {

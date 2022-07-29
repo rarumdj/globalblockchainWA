@@ -4,6 +4,7 @@ import ai from "../../assets/team/landing.png";
 import imgblur from "../../assets/team/landingBlur.png";
 import { useLocation } from "react-router-dom";
 import UseProgressiveImg from "../../Components/UseProgressiveImg";
+import { hero_lady } from "../../assets";
 
 function Header() {
   const [src, { blur }] = UseProgressiveImg(imgblur, ai);
@@ -53,7 +54,7 @@ function Header() {
             delay: 1,
             ease: "easeInOut",
           }}
-          src={src}
+          src={hero_lady}
           style={{
             filter: blur ? "blur(20px)" : "none",
             transition: blur ? "none" : "filter 0.3s ease-out",
