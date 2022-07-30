@@ -14,3 +14,4 @@ export { default as fortify } from "./fortify.svg";
 export { default as promote } from "./promote.svg";
 export { default as seek } from "./seek.svg";
 export { default as aware } from "./aware.svg";
+export { default as kidgram } from "./kidgram.jpeg";

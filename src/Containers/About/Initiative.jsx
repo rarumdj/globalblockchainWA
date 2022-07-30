@@ -6,6 +6,7 @@ import chainGirl from "../../assets/girlchain.png";
 import girlnBlock from "../../assets/girlnblock.png";
 import program16 from "../../assets/program16.png";
 import OneFeature from "../../Components/OneFeature";
+import { kidgram } from "../../assets";
 
 const Program16 = {
   title: "16 Before 16 Program",
@@ -30,7 +31,6 @@ const Program16 = {
   ],
   image: program16,
   link: "",
-  cName: "lg:order-last",
 };
 
 const InitiativeList = [
@@ -70,7 +70,21 @@ const InitiativeList = [
     link: "",
     cName: "",
   },
+  {
+    title: "Kidgrammer",
+    list: [
+      `A Blockchain tour to schools in your City. Introducing the Blockchain technology to children in grade 3 and above.`,
+      ],
+    image: kidgram,
+    link: "https://tinyurl.com/kidgrammer",
+    linkName:"Register here",
+    linktype:'anchor',
+    cName: "lg:order-last",
+  },
 ];
+
+
+
 
 function Initiative() {
   return (
