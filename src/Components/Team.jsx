@@ -15,9 +15,9 @@ function Team({ name, image, blurImg, position }) {
           }}
         />
       </div>
-      <div className="px-6 py-3 footer__bg h-20 min-w-max max-w-screen flex-none">
+      <div className="px-6 py-3 gradient__bg h-20 min-w-max max-w-screen flex-none">
         <div className="flex flex-col justify-between">
-          <h1 className="gradient__text text-sm font-bold lg:text-lg">
+          <h1 className="text-white text-sm font-bold lg:text-lg">
             {name}
           </h1>
           <p className="text-blue-200 text-sm font-bold">{position}</p>

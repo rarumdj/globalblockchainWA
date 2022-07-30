@@ -8,7 +8,7 @@ function Projects() {
     document.title = "GBWA - Projects";
   }, []);
   return (
-    <div className="mt-20">
+    <div className="">
     <SubHeader title={"Project"} />
     <Project />
     <Footer />

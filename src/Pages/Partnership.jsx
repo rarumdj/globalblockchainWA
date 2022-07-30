@@ -8,7 +8,7 @@ function Partnership() {
     document.title = "GBWA - Partnership";
   }, []);
   return (
-    <div className="mt-20">
+    <div className="">
     <SubHeader title={"Partnership"} />
     <Partner />
     <Footer />

@@ -17,7 +17,7 @@ function OneFeature({ title, list, image, para, link, cName }) {
       <div
         className={`flex flex-col flex-initial justify-between w-full h-full py-10 px-12 ${cName}`}
       >
-        <h1 className="gradient__text  text-2xl sm:text-4xl font-bold mb-6">
+        <h1 className="text-white  text-2xl sm:text-4xl font-bold mb-6">
           {title}
         </h1>
         <p className="mb-6 text-sm lg:text-base text-blue-200">{para}</p>

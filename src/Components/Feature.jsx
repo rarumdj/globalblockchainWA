@@ -19,7 +19,7 @@ function Feature({ title, list, image, link, cName, idn }) {
       <div
         className={`flex flex-col flex-initial justify-between w-full h-full py-10 px-12 ${cName}`}
       >
-        <h1 className="gradient__text leading-1 text-2xl sm:text-4xl font-bold mb-6">
+        <h1 className="text-white leading-1 text-2xl sm:text-4xl font-bold mb-6">
           {title}
         </h1>
         <ul className="text-blue-200 mb-6 list-disc">

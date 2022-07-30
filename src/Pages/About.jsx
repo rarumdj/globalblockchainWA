@@ -17,17 +17,20 @@ function About() {
   }, []);
 
   return (
-    <div className="mt-20">
+    <div className="">
       <SubHeader title={"About"} />
-      <Statement />
-      <Allience />
-      <Community />
-      <Objective />
-      <Initiative />
-      <Trustees />
-      <Directors />
-      <Staff />
-      <PartnersIcon />
+      <div className="container mx-auto">
+        <Statement />
+        <Allience />
+        <Community />
+        <Objective />
+        <Initiative />
+        <Trustees />
+        <Directors />
+        <Staff />
+        <PartnersIcon />
+      </div>
+
       <Footer />
     </div>
   );

@@ -68,15 +68,16 @@
 
 @media screen and (max-width: 960px) {
   .NavbarItems {
-    position: fixed;
+    /* position: fixed; */
   }
   .Nav-menu {
     display: flex;
     flex-direction: column;
+   justify-content: center;
     width: 100%;
-    height: 480px;
+    height: 100vh;
     position: absolute;
-    top: 80px;
+    top: 0;
     left: -100%;
     opacity: 1;
     transition: all 0.5s ease;

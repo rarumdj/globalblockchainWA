@@ -9,7 +9,7 @@ function Education() {
   }, []);
 
   return (
-    <div className="mt-20">
+    <div className="">
       <SubHeader title={"Education"} />
       <Resources />
       <Footer />

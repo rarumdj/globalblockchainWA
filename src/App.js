@@ -36,6 +36,7 @@ const App = () => {
           <Route path="/readmore" element={<ReadMore />}></Route>
         </Routes>
       </div>
+      
     </div>
   );
 };

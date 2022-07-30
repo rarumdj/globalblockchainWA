@@ -60,7 +60,7 @@ function Footer() {
   const handleChange = (e) => {
     setToSend({ ...toSend, [e.target.name]: e.target.value });
   };
-
+  const date = new Date();
   return (
     <div id="contact" className="flex flex-col">
       <ToastContainer
@@ -74,8 +74,8 @@ function Footer() {
         draggable
         pauseOnHover
       />
-      <div className="footer__bg flex flex-col py-16 justify-center items-center">
-        <h1 className="gradient__text text-3xl sm:text-5xl mx-8 font-bold mb-8">
+      <div className="gradient__bg flex flex-col py-16 justify-center items-center">
+        <h1 className="text-white text-3xl sm:text-5xl mx-8 font-bold mb-8">
           Get in touch
         </h1>
         <div className="w-100 h-full mx-8">
@@ -113,21 +113,18 @@ function Footer() {
               <select
                 className="w-full cursor-pointer p-2 outline-none bg-transparent border text-xs sm:text-sm text-white"
                 name="service"
-                onChange={handleChange}
-              >
+                onChange={handleChange}>
                 <option className="bg-white" value={toSend.service}>
                   Select service
                 </option>
                 <option
                   className="border-0 bg-white text-xs sm:text-sm capitalize text-black outline-none"
-                  value={toSend.service}
-                >
+                  value={toSend.service}>
                   Blockchain
                 </option>
                 <option
                   className="border-0 bg-white text-xs sm:text-sm capitalize text-black outline-none"
-                  value={toSend.service}
-                >
+                  value={toSend.service}>
                   Blockchain
                 </option>
               </select>
@@ -141,14 +138,12 @@ function Footer() {
                 name="message"
                 value={toSend.message}
                 onChange={handleChange}
-                required
-              ></textarea>
+                required></textarea>
             </div>
             <div className="flex items-center justify-center">
               <button
                 className="w-full p-2 outline-none bg-transparent border  text-xs sm:text-sm text-white"
-                type="submit"
-              >
+                type="submit">
                 Submit
               </button>
             </div>
@@ -170,11 +165,13 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col px-24 py-6">
+      <div className="container mx-auto flex flex-col px-24 py-6">
         <div className="flex justify-between ">
           <div className="flex justify-between items-center">
             {MenuItems.map((item, i) => (
-              <p className="hidden md:block text-sm text-white mr-3" key={i}>
+              <p
+                className="hidden md:block text-sm text-[#042c54] mr-3"
+                key={i}>
                 <a href={item.url}>{item.title}</a>
               </p>
             ))}
@@ -183,8 +180,8 @@ function Footer() {
             <img className="w-12" src={logo} alt="logo" />
           </div>
         </div>
-        <p className="sm:text-sm mt-4 text-xs text-gray-300 text-center">
-          © 2021 GBWA All rights reserved.
+        <p className="sm:text-sm mt-4 text-xs text-[#042c54] text-center">
+          © {date.getFullYear()} GBWA All rights reserved.
         </p>
       </div>
     </div>

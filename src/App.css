@@ -98,7 +98,40 @@ a {
     rgba(4, 12, 24, 1) 100%
   );
   background-blend-mode: overlay;
+}
 
+.radial_bg_op {
+  background: radial-gradient(
+    86.08% 87.9% at 56.27% 103.16%,
+    #0b045a 34.88%,
+    rgba(11, 4, 90, 0.59) 100%
+  );
+}
+
+.radial_bg {
+  background: radial-gradient(
+    86.08% 87.9% at 56.27% 103.16%,
+    #0b045a 34.88%,
+    rgba(11, 4, 90, 0.59) 100%
+  );
+}
+
+@media (min-width: 1024px) {
+  .radial_bg {
+    background: radial-gradient(
+      65.46% 65.58% at 65.46% 27.22%,
+      #0b045a 54.88%,
+      rgba(11, 4, 90, 0.59) 100%
+    );
+  }
+
+  .radial_bg_op {
+    background: radial-gradient(
+    90.47% 99.78% at 17.47% 39.54%,
+    #0b045a 34.88%,
+    rgba(11, 4, 90, 0.59) 100%
+  );
+  }
 }
 
 .gradient__text {

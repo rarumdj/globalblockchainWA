@@ -14,10 +14,13 @@ function Home() {
       <div className="gradient__bg__header">
         <Header />
       </div>
-      <Quote />
-      <Features />
-      <Banner />
+      <div className="container mx-auto">
+        <Quote />
+        <Features />
+        <Banner />
+      </div>
       <Footer />
+
     </>
   );
 }

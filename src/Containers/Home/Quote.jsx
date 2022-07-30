@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 function Quote() {
   return (
-    <div className="py-8 px-8 md:py-24 md:px-24">
+    <div className="py-8 px-8 md:py-24">
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -19,7 +19,7 @@ function Quote() {
           "It's Belief, Not Ability, That Makes Girls Think Blockchain Is Not
           For Them"
         </h2>
-        <p className="text-center text-white text-sm md:text-xl font-bold mt-2">
+        <p className="text-center text-[#042c54] text-sm md:text-xl font-bold mt-2">
           -Raj Kapoor
         </p>
       </motion.div>

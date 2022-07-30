@@ -3,7 +3,11 @@ import ruralImg from "../../assets/img-rural.jpg";
 import concernImg from "../../assets/img-concerns.jpg";
 import factImg from "../../assets/img-facts.jpg";
 import Feature from "../../Components/Feature";
-import { concern_illustration, fact_illustration, rural_illustration } from "../../assets";
+import {
+  concern_illustration,
+  fact_illustration,
+  rural_illustration,
+} from "../../assets";
 import HomeFeatures from "../../Components/HomeFeautures";
 
 const FeatureList = [
@@ -32,6 +36,7 @@ const FeatureList = [
     link: "/readmore#concerns",
     id: "concerns",
     cName: "",
+    position: "left",
   },
   {
     title: "The Rural Challenge",
@@ -49,7 +54,7 @@ const FeatureList = [
 ];
 function Features() {
   return (
-    <div className="pb-8 px-8 md:pb-24 md:px-24 ">
+    <div className="pb-8 px-8">
       {FeatureList.map((feature, i) => (
         <HomeFeatures
           title={feature.title}
@@ -59,6 +64,7 @@ function Features() {
           cName={feature.cName}
           idn={feature.id}
           key={i}
+          position={feature.position}
         />
       ))}
     </div>
