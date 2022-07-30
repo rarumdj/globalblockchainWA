@@ -29,7 +29,7 @@ function NavBar() {
 
   return (
     <nav
-      className={`z-[9999] fixed top-0 left-0 right-0 bg-opacity-50 backdrop-blur-md ${stickyClass}`}>
+      className={`z-[9999] fixed top-0 left-0 right-0 bg-opacity-40 backdrop-blur-md ${stickyClass}`}>
       <div className="container mx-auto NavbarItems">
         <div className="Navbar-logo z-[9999]">
           <NavLink to={"/"}>

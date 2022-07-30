@@ -21,17 +21,17 @@ function Banner() {
         <p className="text-white text-xs md:text-sm">
           Wish to get into the blockchain world? We're eager to hear from you.
         </p>
-        <div class="flex w-full md:justify-start justify-center items-end">
-          <div class="relative mr-4 lg:w-10/12 w-full">
+        <div className="flex w-full md:justify-start justify-center items-end">
+          <div className="relative mr-4 lg:w-10/12 w-full">
             <input
               type="text"
               id="hero-field"
               name="hero-field"
               placeholder="Send us a whatsapp message today!"
-              class="w-full  bg-[#042c54] bg-opacity-50 rounded-3xl border border-white focus:ring-2 focus:ring-indigo-200 focus:bg-transparent focus:border-indigo-500 text-base outline-none text-white py-2 pl-3 md:pr-[9rem] pr-[2rem] leading-8 transition-colors duration-200 ease-in-out"
+              className="w-full placeholder:text-xs placeholder:text-white bg-[#042c54] bg-opacity-50 rounded-3xl border border-white focus:ring-2 focus:ring-indigo-200 focus:bg-transparent focus:border-indigo-500 text-base outline-none text-white py-2 pl-3 md:pr-[9rem] pr-[2rem] leading-8 transition-colors duration-200 ease-in-out"
             />
             <div className="absolute right-0 top-0 mt-[1px] p-[2px]">
-              <button class="rounded-3xl md:min-w-[9rem] inline-flex justify-center text-[#042c54] bg-white border-0 py-2.5 px-6 focus:outline-none text-md">
+              <button className="rounded-3xl md:min-w-[9rem] inline-flex justify-center text-[#042c54] bg-white border-0 py-2.5 px-6 focus:outline-none text-md">
                 Send
               </button>
             </div>
