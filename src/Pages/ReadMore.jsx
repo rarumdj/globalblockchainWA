@@ -7,6 +7,8 @@ import ruralImg from "../assets/img-rural.jpg";
 import genderDriveImg from "../assets/img-genderdrive.jpg";
 import blurimg from "../assets/divieBlur.jpg";
 import UseProgressiveImg from "../Components/UseProgressiveImg";
+import HomeFeatures from "../Components/HomeFeautures";
+import { concern_illustration, fact_illustration, rural_illustration } from "../assets";
 
 const TheFact = {
   title: "The Facts",
@@ -22,7 +24,7 @@ const TheFact = {
     `An MHRD report shows that only 8.52% girls enrolled  in higher education in 2012-13 were pursuing  bachelor's degrees in engineering or technology.  This was far below the national average of 13.27%.`,
     `These disheartening statistics haven't changed  much in the past few years.`,
   ],
-  image: factImg,
+  image: fact_illustration,
   link: "",
   id: "fact",
   cName: "",
@@ -38,7 +40,7 @@ const TheConcern = {
     `Girls & Women continue to face the same kind of discrimination at work as they face in  society.`,
     `According to a recent Accenture research report, the average gender pay gap in Africa  is as high as 59%.`,
   ],
-  image: concernImg,
+  image: concern_illustration,
   link: "",
   id: "concerns",
   cName: "lg:order-last",
@@ -64,7 +66,7 @@ const TheRural = {
     `Poor student teacher ratio`,
     `Limited Regionalized content`,
   ],
-  image: ruralImg,
+  image: rural_illustration,
   link: "",
   id: "rural",
   cName: "",
@@ -85,7 +87,7 @@ function ReadMore() {
               {TheFact.title}
             </h1>
           </div>
-          <Feature
+          <HomeFeatures
             list={TheFact.list}
             image={TheFact.image}
             link={TheFact.link}
@@ -117,7 +119,7 @@ function ReadMore() {
               {TheConcern.title}
             </h1>
           </div>
-          <Feature
+          <HomeFeatures
             list={TheConcern.list}
             image={TheConcern.image}
             link={TheConcern.link}
@@ -131,7 +133,7 @@ function ReadMore() {
               {TheRural.title}
             </h1>
           </div>
-          <Feature
+          <HomeFeatures
             list={TheRural.list}
             image={TheRural.image}
             link={TheRural.link}

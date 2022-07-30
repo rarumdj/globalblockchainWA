@@ -45,13 +45,15 @@ function HomeFeatures({ title, list, image, link, cName, idn, position }) {
                   </li>
                 ))}
               </ul>
-              <div className="flex justify-center">
-                <button
-                  onClick={() => navigate(link)}
-                  className="bg-red-600 inline-flex text-white border-0 py-2 px-6 focus:outline-none hover:bg-red-700 rounded-lg text-lg">
-                  Read More{" >"}
-                </button>
-              </div>
+              {link && (
+                <div className="flex justify-center">
+                  <button
+                    onClick={() => navigate(link)}
+                    className="bg-red-600 inline-flex text-white border-0 py-2 px-6 focus:outline-none hover:bg-red-700 rounded-lg text-lg">
+                    Read More{" >"}
+                  </button>
+                </div>
+              )}
             </div>
           </>
         ) : (
@@ -72,13 +74,15 @@ function HomeFeatures({ title, list, image, link, cName, idn, position }) {
                   </li>
                 ))}
               </ul>
-              <div className="flex justify-center">
-                <button
-                  onClick={() => navigate(link)}
-                  className="bg-red-600 inline-flex text-white border-0 py-2 px-6 focus:outline-none hover:bg-red-700 rounded-lg text-lg">
-                  Read More{" >"}
-                </button>
-              </div>
+              {link && (
+                <div className="flex justify-center">
+                  <button
+                    onClick={() => navigate(link)}
+                    className="bg-red-600 inline-flex text-white border-0 py-2 px-6 focus:outline-none hover:bg-red-700 rounded-lg text-lg">
+                    Read More{" >"}
+                  </button>
+                </div>
+              )}
             </div>
             <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
               <img

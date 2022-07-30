@@ -42,18 +42,21 @@ const InitiativeList = [
       `It makes concrete recommendations on  ways that stakeholders can work together to  strengthen STEM education and related  career pathways for women.`,
     ],
     image: girlnBlock,
-    link: "",
+    link: "/s",
+    linkName:"Join our community",
     cName: "",
   },
   {
-    title: "Block Girls Series Awareness Program",
+    title: "Block Girls Talk Series Awareness Program",
     list: [
       `The BlockGirls Series, and outreach  initiatives will emphasize current research  on strategies proven to increase girls'  engagement in Blockchain.`,
       `Studies have converged on a set of common  strategies that work, and these have  become this programs' foundation.`,
       `The series shall summarize seven research-  based strategies for engaging women in  Blockchain`,
     ],
     image: blockGirl,
-    link: "",
+    link: "https://youtube.com/channel/UCQ0vE1FUIWWfpUBDXepXYyA",
+    linkName:"Watch Series",
+    linktype:"anchor",
     cName: "lg:order-last",
   },
   {
@@ -92,6 +95,8 @@ function Initiative() {
           title={feature.title}
           list={feature.list}
           image={feature.image}
+          linkName={feature.linkName}
+          linkType={feature.linktype}
           link={feature.link}
           cName={feature.cName}
           key={i}

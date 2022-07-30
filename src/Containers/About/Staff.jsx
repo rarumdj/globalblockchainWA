@@ -17,12 +17,6 @@ const StaffDetails = [
     imageBlur: modupeBlur,
   },
   {
-    name: "Edirin Oghenekevwe",
-    position: "Executive Assistant",
-    image: faith,
-    imageBlur: faithBlur,
-  },
-  {
     name: "Rowlanda Gbenedio",
     position: "Project Associate",
     image: roli,
@@ -30,9 +24,15 @@ const StaffDetails = [
   },
   {
     name: "Daba Alli",
-    position: "Administrative Assistant",
+    position: "Executive Admin officer",
     image: ali,
     imageBlur: aliBlur,
+  },
+  {
+    name: "Edirin Oghenekevwe",
+    position: "Executive Assistant",
+    image: faith,
+    imageBlur: faithBlur,
   },
 ];
 const Staff = () => {
