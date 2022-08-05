@@ -26,7 +26,7 @@ const ResourcesItem = [
 const Resources = () => {
   return (
     <div className="py-8 px-8 md:py-24 md:px-24">
-      <div className="p-2 sm:p-4 border-2 border-blue-200 rounded-md">
+      <div className="p-2 sm:p-4 border-2 border-gray-200 rounded-md">
         <h1 className="gradient__text text-lg sm:text-2xl font-bold">
           Free Resources
         </h1>
@@ -38,7 +38,7 @@ const Resources = () => {
           className="footer__bg flex-col lg:flex-row rounded-md flex h-auto gap-6 justify-between p-6 my-6 sm:my-8"
         >
           <div className="basis-3/6">
-            <h1 className="gradient__text text-2xl mb-6 font-bold">
+            <h1 className="text-white text-2xl mb-6 font-bold">
               {items.title}
             </h1>
             <p className="text-sm md:text-base text-blue-200">{items.para}</p>

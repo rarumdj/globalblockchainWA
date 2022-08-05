@@ -15,3 +15,6 @@ export { default as promote } from "./promote.svg";
 export { default as seek } from "./seek.svg";
 export { default as aware } from "./aware.svg";
 export { default as kidgram } from "./kidgram.jpeg";
+export { default as kidsgram } from "./kidsgram.jpeg";
+export { default as girlchainprogram } from "./girlchainprogram.jpeg";
+export { default as trainteacher } from "./trainteacher.jpeg";

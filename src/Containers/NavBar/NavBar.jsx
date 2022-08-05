@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
-import { Link, NavLink, useLocation } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { NavLink, useLocation } from "react-router-dom";
+import logo from "../../assets/gb_logo.png";
 import MenuItems from "./MenuItems";
 import "./NavBar.css";
-import logo from "../../assets/gb_logo.png";
 
 function NavBar() {
   const { pathname } = useLocation();
@@ -15,9 +15,18 @@ function NavBar() {
   const [stickyClass, setStickyClass] = useState("");
 
   useEffect(() => {
-    window.addEventListener("scroll", stickNavbar);
-    return () => window.removeEventListener("scroll", stickNavbar);
-  }, []);
+    if (
+      (pathname.includes("project") && pathname.length > 8) ||
+      (pathname.includes("partnership") && pathname.length > 12) ||
+      pathname.includes("readmore")
+    ) {
+      setStickyClass("bg-[#040c18]");
+      return () => setStickyClass("");
+    } else {
+      window.addEventListener("scroll", stickNavbar);
+      return () => window.removeEventListener("scroll", stickNavbar);
+    }
+  }, [pathname]);
 
   const stickNavbar = () => {
     if (window !== undefined) {

@@ -1,7 +1,10 @@
 import { useEffect } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import "./App.css";
+import PromptMessage from "./Components/PromptMessage";
 import NavBar from "./Containers/NavBar/NavBar";
+import SinglePartnership from "./Containers/Partnership/SinglePartnership";
+import SingleProject from "./Containers/Project/SingleProject";
 import About from "./Pages/About";
 import Cooperate from "./Pages/Cooperate";
 import Education from "./Pages/Education";
@@ -34,9 +37,13 @@ const App = () => {
           <Route path="/partnership" element={<Partnership />}></Route>
           <Route path="/corporate-training" element={<Cooperate />}></Route>
           <Route path="/readmore" element={<ReadMore />}></Route>
+          <Route path="/project/:slug" element={<SingleProject />}></Route>
+          <Route
+            path="/partnership/:slug"
+            element={<SinglePartnership />}></Route>
         </Routes>
       </div>
-      
+      <PromptMessage />
     </div>
   );
 };

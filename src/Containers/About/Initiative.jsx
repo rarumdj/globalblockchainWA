@@ -1,12 +1,12 @@
-import React from "react";
 import { motion } from "framer-motion";
-import Feature from "../../Components/Feature";
+import React from "react";
+import { kidsgram } from "../../assets";
+import program16 from "../../assets/beforeprogram.png";
 import blockGirl from "../../assets/blockgirl.png";
 import chainGirl from "../../assets/girlchain.png";
-import girlnBlock from "../../assets/girlnblock.png";
-import program16 from "../../assets/program16.png";
+import girlnBlock from "../../assets/girlframework.png";
+import Feature from "../../Components/Feature";
 import OneFeature from "../../Components/OneFeature";
-import { kidgram } from "../../assets";
 
 const Program16 = {
   title: "16 Before 16 Program",
@@ -47,7 +47,7 @@ const InitiativeList = [
     cName: "",
   },
   {
-    title: "Block Girls Talk Series Awareness Program",
+    title: "Block Girls Talk Series",
     list: [
       `The BlockGirls Series, and outreach  initiatives will emphasize current research  on strategies proven to increase girls'  engagement in Blockchain.`,
       `Studies have converged on a set of common  strategies that work, and these have  become this programs' foundation.`,
@@ -75,7 +75,7 @@ const InitiativeList = [
     list: [
       `A Blockchain tour to schools in your City. Introducing the Blockchain technology to children in grade 3 and above.`,
       ],
-    image: kidgram,
+    image: kidsgram,
     link: "https://tinyurl.com/kidgrammer",
     linkName:"Register here",
     linktype:'anchor',
