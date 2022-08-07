@@ -7,13 +7,18 @@ import { MdOutlineAutoGraph, MdOutlineSchool } from "react-icons/md";
 import { RiHandHeartLine } from "react-icons/ri";
 import { SiHackthebox } from "react-icons/si";
 import { VscCommentDiscussion, VscOrganization } from "react-icons/vsc";
-import { girlchainprogram, img_concerns, kidgram, trainteacher } from "../assets";
+import {
+  girlchainprogram,
+  img_concerns,
+  kidgram,
+  trainteacher,
+} from "../assets";
 
 export const ProjectList = [
   {
     title: "Blockchain Teacher Training Programs",
     text: "Are you an Educator, ICT   teacher, or you just want to upgrade your skills then this training is for you. Technology is rapidly evolving and Blockchain in recent times has gained the credibility of being a very reliable source to store data related to various types of transactions. Due to this functionality, industries are using this technology to stay at pace with progression. If you would like to upgrade your skill and earn more then you should learn about the Blockchain technology. A huge number of high profile companies are hiring due to the exponential growth of this technology.",
-    action: "Register here👇🏼",
+    action: "Register here",
     actionLink: "https://bit.ly/GBWA_BCT",
     img: trainteacher,
     icon: <FaChalkboardTeacher size="30" color="#000" className="m-auto" />,
@@ -90,9 +95,9 @@ export const PartnershipList = [
   },
   {
     title: "Become a mentor",
-    text: "Join our community of mentor to help other women and girls stay focused, gain confidence and attain goals. Contact us today",
-    action: "Become a mentor",
-    actionLink: "https://tinyurl.com/kidgrammer",
+    text: "Join our community of mentor to help other women and girls stay focused, gain confidence and attain goals. Contact us today <a href='mailto://info@globalblockchainwa.org'>info@globalblockchainwa.org </a>",
+    action: "Join our community",
+    actionLink: "https://tinyurl.com/GBWAGIRL",
     img: img_concerns,
     icon: <VscCommentDiscussion size="30" color="#000" className="m-auto" />,
   },

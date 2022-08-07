@@ -5,6 +5,12 @@ import "react-toastify/dist/ReactToastify.css";
 import logo from "../../assets/gb_logo.png";
 import MenuItems from "../NavBar/MenuItems";
 
+const selectInput = [
+  "Collaboration",
+  "Blockchain Career Counseling",
+  "Partnership",
+  "Others",
+];
 function Footer() {
   const success = () =>
     toast("Message Delivered", {
@@ -117,16 +123,14 @@ function Footer() {
                 <option className="bg-white" value={toSend.service}>
                   Select service
                 </option>
-                <option
-                  className="border-0 bg-white text-xs sm:text-sm capitalize text-black outline-none"
-                  value={toSend.service}>
-                  Blockchain
-                </option>
-                <option
-                  className="border-0 bg-white text-xs sm:text-sm capitalize text-black outline-none"
-                  value={toSend.service}>
-                  Blockchain
-                </option>
+                {selectInput.map((val, i) => (
+                  <option
+                    key={i}
+                    className="border-0 bg-white text-xs sm:text-sm capitalize text-black outline-none"
+                    value={toSend.service}>
+                    {val}
+                  </option>
+                ))}
               </select>
             </div>
             <div className="flex items-center justify-center mb-2">
@@ -151,11 +155,11 @@ function Footer() {
           <div className="flex flex-col mt-8 mb-4 justify-center items-center">
             <h1 className="font-bold text-lg text-white mb-3">Contact info</h1>
             <p className="text-white text-sm md:text-base text-center mb-3">
-              The Autograph Mall, 22/23 Sani Abacha Rd GRA, Port Harcourt
+              The Autograph Mall, 30/33 Sani Abacha Rd GRA, Port Harcourt
               Nigeria.
             </p>
             <p className="text-white text-sm md:text-base mb-3">
-              <a href="tel:+2349153115310">+234 915 311 5310</a>
+              <a href="tel:+2348072064317">+234 807 206 4317</a>
             </p>
             <p className="text-white text-sm md:text-base">
               <a href="mailto://info@globalblockchainwa.org">
