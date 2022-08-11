@@ -1,5 +1,6 @@
 import React from "react";
 import ReactPlayer from "react-player";
+import { gbeducation } from "../../assets";
 
 const ResourcesItem = [
   {
@@ -22,6 +23,13 @@ const ResourcesItem = [
     para: "Smart contracts are simply programs stored on a blockchain that run when predetermined conditions are met. They typically are used to automate the execution of an agreement so that all participants can be immediately certain of the outcome, without any intermediary’s involvement or time loss. They can also automate a workflow, triggering the next action when conditions are met.",
     tubelink: "https://www.youtube.com/watch?v=ZE2HxTmxfrI&t=24s",
   },
+  {
+    title: "Learn Blockchain from the GBI CAMPUS",
+    para: "Learn for free",
+    action: "Register into the GBI Campus",
+    img: gbeducation,
+    actionLink: "https://campus.blockchaininitiative.org/",
+  },
 ];
 const Resources = () => {
   return (
@@ -35,23 +43,44 @@ const Resources = () => {
       {ResourcesItem.map((items, i) => (
         <div
           key={i}
-          className="footer__bg flex-col lg:flex-row rounded-md flex h-auto gap-6 justify-between p-6 my-6 sm:my-8"
-        >
+          className="footer__bg flex-col lg:flex-row rounded-md flex h-auto gap-6 justify-between p-6 my-6 sm:my-8">
           <div className="basis-3/6">
             <h1 className="text-white text-2xl mb-6 font-bold">
               {items.title}
             </h1>
-            <p className="text-sm md:text-base text-blue-200">{items.para}</p>
+            <p className="text-sm md:text-base text-blue-200 mb-8">
+              {items.para}
+            </p>
+            {items.actionLink && (
+              <div className="flex">
+                <a
+                  href={items.actionLink}
+                  target="_blank"
+                  className="bg-red-600 inline-flex text-white border-0 py-2 px-6 focus:outline-none hover:bg-red-700 rounded-lg text-lg"
+                  rel="noreferrer">
+                  {`${items.action}  >`}
+                </a>
+              </div>
+            )}
           </div>
           <div className="basis-3/6">
             <div className="relative pt-[56.25%]">
-              <ReactPlayer
-                className="absolute left-0 top-0"
-                width="100%"
-                height="100%"
-                url={items.tubelink}
-                // controls={false}
-              />
+              {items.tubelink && (
+                <ReactPlayer
+                  className="absolute left-0 top-0"
+                  width="100%"
+                  height="100%"
+                  url={items.tubelink}
+                  // controls={false}
+                />
+              )}
+              {items.img && (
+                <img
+                  src={items.img}
+                  alt={items.img}
+                  className="absolute left-0 top-0"
+                />
+              )}
             </div>
           </div>
         </div>

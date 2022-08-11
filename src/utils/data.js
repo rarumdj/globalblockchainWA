@@ -12,6 +12,7 @@ import {
   img_concerns,
   kidgram,
   trainteacher,
+  winpartner,
 } from "../assets";
 
 export const ProjectList = [
@@ -71,6 +72,16 @@ export const ProjectList = [
     text: "We believe in team work and we are open to collaborate with you on tech and blockchain related projects.",
     img: img_concerns,
     icon: <FaRegHandshake size="30" color="#000" className="m-auto" />,
+    projects: [
+      {
+        title: "GBWA X Women Intense NFT",
+        text: "GBWA is partnerd with women Intense NFT to onboard 7777girls to web3.",
+        sub: [],
+        action: "Reach out to us to collaborate",
+        actionLink: "",
+        img: winpartner,
+      },
+    ],
   },
   {
     title: "Entrepreneurship training",

@@ -18,3 +18,5 @@ export { default as kidgram } from "./kidgram.jpeg";
 export { default as kidsgram } from "./kidsgram.jpeg";
 export { default as girlchainprogram } from "./girlchainprogram.jpeg";
 export { default as trainteacher } from "./trainteacher.jpeg";
+export { default as winpartner } from "./winpartner.jpg";
+export { default as gbeducation } from "./gbeducation.jpg";

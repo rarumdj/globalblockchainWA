@@ -7,10 +7,11 @@ import { Slugify } from "../../utils/utils";
 const SingleProject = () => {
   const { slug } = useParams();
   const items = ProjectList.filter((item) => Slugify(item.title) === slug);
-
+  const p = items.map((item) => item.projects);
+  const projects = p[0]?.map((item) => item);
   return (
     <section>
-      <SinglePage items={items} />
+      <SinglePage items={projects ?? items} />
     </section>
   );
 };
