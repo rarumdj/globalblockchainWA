@@ -145,6 +145,10 @@ a {
   background: var(--gradient-bar);
 }
 
+.gradient__bar_blue {
+  background: var(--gradient-bar-blue);
+}
+
 .footer__bg {
   background: var(--color-footer);
 }

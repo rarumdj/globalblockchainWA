@@ -13,6 +13,7 @@
     rgba(11, 4, 90, 0.76) 99.55%
   );
   --gradient-bar: linear-gradient(103.22deg, #f23838 -13.86%, #e8814a 99.55%);
+  --gradient-bar-blue: linear-gradient(103.22deg, #6a38f2 -13.86%, #4a6ce8 99.55%);
 
   --color-bg: #040c18;
   --color-footer: #031b34;
