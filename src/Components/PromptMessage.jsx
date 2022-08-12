@@ -14,12 +14,12 @@ const PromptMessage = () => {
   return (
     <Modal active={OpenModal} onClick={setOpenModal} size="max-w-4xl" close>
       <div className="flex flex-col w-full justify-center items-center">
-        <div class="container mx-auto flex md:flex-row flex-col items-center gap-4">
-          <div class="lg:flex-grow md:w-1/2 flex flex-col md:items-start md:text-left items-center text-center">
+        <div className="container mx-auto flex md:flex-row flex-col items-center gap-4">
+          <div className="lg:flex-grow md:w-1/2 flex flex-col md:items-start md:text-left items-center text-center">
             <h2 className="gradient__text text-2xl md:text-2xl font-extrabold leading-tight mb-5">
               {modalInfo.title}
             </h2>
-            <p class="leading-relaxed text-[#140D60] md:text-base text-sm md:mb-10 mb-5">
+            <p className="leading-relaxed text-[#140D60] md:text-base text-sm md:mb-10 mb-5">
               {modalInfo.text}
             </p>
             {modalInfo.sub && (
@@ -46,9 +46,9 @@ const PromptMessage = () => {
               </div>
             )}
           </div>
-          <div class="lg:max-w-sm lg:w-full md:w-1/2">
+          <div className="lg:max-w-sm lg:w-full md:w-1/2">
             <img
-              class="object-cover object-center rounded"
+              className="object-cover object-center rounded"
               alt="hero"
               src={modalInfo.img}
             />

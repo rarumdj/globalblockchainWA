@@ -27,3 +27,8 @@ export { default as besponsor } from "./besponsor.png";
 export { default as betech } from "./betech.png";
 export { default as blackwoman } from "./blackwoman.png";
 export { default as imgpreview } from "./imgpreview.png";
+export { default as g1 } from "./g1.jpg";
+export { default as g2 } from "./g2.jpg";
+export { default as g3 } from "./g3.jpg";
+export { default as g4 } from "./g4.jpg";
+export { default as g5 } from "./g5.jpg";

@@ -35,6 +35,12 @@ const MenuItems = [
     cName: "nav-link",
     cNameActive: "nav-linkActive",
   },
+  {
+    title: "Gallery",
+    url: "/gallery",
+    cName: "nav-link",
+    cNameActive: "nav-linkActive",
+  },
 ];
 
 export default MenuItems;

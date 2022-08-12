@@ -10,19 +10,18 @@ function Statement() {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5, ease: "easeIn" }}
         className="flex flex-col w-full justify-center items-center ">
-        <div class="container mx-auto flex md:flex-row flex-col items-center">
-          <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-            <p class="leading-relaxed text-[#140D60] md:text-3xl">
+        <div className="container mx-auto flex md:flex-row flex-col items-center">
+          <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+            <p className="leading-relaxed text-[#140D60] md:text-3xl">
               At GBWA we envision a world where girls feel confident to pursue
               blockchain careers and are equally represented in the tech
               workforce. With programs designed to empower women through
               blockchain technologies
             </p>
-           
           </div>
-          <div class="lg:max-w-lg lg:w-full md:w-1/2">
+          <div className="lg:max-w-lg lg:w-full md:w-1/2">
             <img
-              class="object-cover object-center rounded"
+              className="object-cover object-center rounded"
               alt="hero"
               src={img_concerns}
             />

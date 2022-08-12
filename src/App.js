@@ -8,6 +8,7 @@ import SingleProject from "./Containers/Project/SingleProject";
 import About from "./Pages/About";
 import Cooperate from "./Pages/Cooperate";
 import Education from "./Pages/Education";
+import Gallery from "./Pages/Gallery";
 import Home from "./Pages/Home";
 import Partnership from "./Pages/Partnership";
 import Projects from "./Pages/Projects";
@@ -38,6 +39,7 @@ const App = () => {
           <Route path="/corporate-training" element={<Cooperate />}></Route>
           <Route path="/readmore" element={<ReadMore />}></Route>
           <Route path="/project/:slug" element={<SingleProject />}></Route>
+          <Route path="/gallery" element={<Gallery />}></Route>
           <Route
             path="/partnership/:slug"
             element={<SinglePartnership />}></Route>
