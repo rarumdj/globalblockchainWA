@@ -18,8 +18,8 @@ const MenuItems = [
     cNameActive: "nav-linkActive",
   },
   {
-    title: "Corporate Training",
-    url: "/corporate-training",
+    title: "Blockchain Solution",
+    url: "/blockchain-solution",
     cName: "nav-link",
     cNameActive: "nav-linkActive",
   },

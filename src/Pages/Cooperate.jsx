@@ -6,11 +6,14 @@ const Cooperate = () => {
 
   useEffect(() => {
     window.location.replace(
-      "https://indiablockchainalliance.org/corporate-training"
+      "https://yunometa.com/",
+      "_blank",
+      "noopener,noreferrer"
     );
+    // window.open('https://yunometa.com/', '_blank', 'noopener,noreferrer');
   }, [pathname]);
 
-  return <div>Cooperate</div>;
+  return <div></div>;
 };
 
 export default Cooperate;

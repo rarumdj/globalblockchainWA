@@ -36,7 +36,7 @@ const App = () => {
           <Route path="/education" element={<Education />}></Route>
           <Route path="/project" element={<Projects />}></Route>
           <Route path="/partnership" element={<Partnership />}></Route>
-          <Route path="/corporate-training" element={<Cooperate />}></Route>
+          <Route path="/blockchain-solution" element={<Cooperate />}></Route>
           <Route path="/readmore" element={<ReadMore />}></Route>
           <Route path="/project/:slug" element={<SingleProject />}></Route>
           <Route path="/gallery" element={<Gallery />}></Route>
