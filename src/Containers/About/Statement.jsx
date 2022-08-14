@@ -55,16 +55,14 @@ function Statement() {
             <p className="mt-6 text-left text-sm md:text-base text-blue-200">
               Inspiring girls to develop interest and conﬁdence in Blockchain
               through hands- on activities, community engagement, and positive
-              female role models
+              female role models.
             </p>
           </div>
           <div className="">
             <div className="gradient__bar h-1 w-12 mb-2" />
             <h2 className="font-bold text-white text-lg">Our Approach</h2>
             <p className="mt-6 text-left text-sm md:text-base text-blue-200">
-              Inspiring girls to develop interest and conﬁdence in Blockchain
-              through hands- on activities, community engagement, and positive
-              female role models
+            Our affordable, research- backed approach to Blockchain education brings a unique perspective to our Programs.
             </p>
           </div>
         </div>

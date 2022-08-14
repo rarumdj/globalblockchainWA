@@ -3,7 +3,7 @@ import React from "react";
 import { imgpreview } from "../assets";
 import UseProgressiveImg from "./UseProgressiveImg";
 
-const GalleryCard = ({ img, title, onClick }) => {
+const GalleryCard = ({ img, onClick }) => {
   const [src, { blur }] = UseProgressiveImg(imgpreview, img);
   const cardVarient = {
     hidden: { scale: 1 },
@@ -35,9 +35,6 @@ const GalleryCard = ({ img, title, onClick }) => {
           }}
         />
       </motion.div>
-      <h2 className="title-font md:text-xl font-medium text-[#0B045A] mt-3 mb-3">
-        {title}
-      </h2>
     </div>
   );
 };

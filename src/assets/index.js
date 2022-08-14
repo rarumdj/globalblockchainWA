@@ -32,3 +32,4 @@ export { default as g2 } from "./g2.jpg";
 export { default as g3 } from "./g3.jpg";
 export { default as g4 } from "./g4.jpg";
 export { default as g5 } from "./g5.jpg";
+export { default as girledu } from "./girledu.jpg";

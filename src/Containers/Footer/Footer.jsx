@@ -158,8 +158,8 @@ function Footer() {
               The Autograph Mall, 30/33 Sani Abacha Rd GRA, Port Harcourt
               Nigeria.
             </p>
-            <p className="text-white text-sm md:text-base mb-3">
-              <a href="tel:+2348072064317">+234 807 206 4317</a>
+            <p className="text-white text-sm md:text-base mb-3 flex gap-3">
+            <a href="tel:+2349153115310">+234 915 311 5310</a>   <a href="tel:+2348072064317">+234 807 206 4317</a>
             </p>
             <p className="text-white text-sm md:text-base">
               <a href="mailto://info@globalblockchainwa.org">

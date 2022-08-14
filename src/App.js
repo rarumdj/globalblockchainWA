@@ -13,6 +13,7 @@ import Home from "./Pages/Home";
 import Partnership from "./Pages/Partnership";
 import Projects from "./Pages/Projects";
 import ReadMore from "./Pages/ReadMore";
+import SingleGallery from "./Pages/SingleGallery";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -40,6 +41,7 @@ const App = () => {
           <Route path="/readmore" element={<ReadMore />}></Route>
           <Route path="/project/:slug" element={<SingleProject />}></Route>
           <Route path="/gallery" element={<Gallery />}></Route>
+          <Route path="/gallery/:slug" element={<SingleGallery />}></Route>
           <Route
             path="/partnership/:slug"
             element={<SinglePartnership />}></Route>

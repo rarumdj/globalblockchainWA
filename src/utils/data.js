@@ -14,8 +14,14 @@ import {
   besponsor,
   betech,
   blackwoman,
+  g1,
+  g2,
+  g3,
+  g4,
+  g5,
   gbeducation,
   girlchainprogram,
+  girledu,
   img_concerns,
   kidgram,
   trainteacher,
@@ -30,7 +36,7 @@ export const ProjectList = [
     actionLink: "https://bit.ly/GBWA_BCT",
     img: trainteacher,
     icon: <FaChalkboardTeacher size="30" color="#000" className="m-auto" />,
-    color: 'gradient__bar',
+    color: "gradient__bar",
   },
   {
     title: "Kidgrammer",
@@ -44,42 +50,42 @@ export const ProjectList = [
     actionLink: "https://tinyurl.com/kidgrammer",
     img: kidgram,
     icon: <VscCommentDiscussion size="30" color="#000" className="m-auto" />,
-    color: 'gradient__bar_blue',
+    color: "gradient__bar_blue",
   },
   {
     title: "Girl Chain",
     text: "Girl Chain is a 4-week Free coding camp for girls between the ages 8 and 16. GIRLCHAIN will work to bring fun, educational workshops and camps to garner the interest of young minds. GIRLCHAIN will partner with local child care centers to create, a dedicated center for students to explore blockchain. New programs are added every six months as well.",
     img: girlchainprogram,
     icon: <FaChalkboardTeacher size="30" color="#000" className="m-auto" />,
-    color: 'gradient__bar',
+    color: "gradient__bar",
   },
   {
     title: "Education for Purpose",
     text: "Coming Soon",
     img: img_concerns,
     icon: <VscCommentDiscussion size="30" color="#000" className="m-auto" />,
-    color: 'gradient__bar_blue',
+    color: "gradient__bar_blue",
   },
   {
     title: "Blockchain Career Counselling",
     text: "",
     img: img_concerns,
     icon: <MdOutlineAutoGraph size="30" color="#000" className="m-auto" />,
-    color: 'gradient__bar',
+    color: "gradient__bar",
   },
   {
     title: "Blockchain Workshop series Pan Africa",
     text: "",
     img: img_concerns,
     icon: <GrWorkshop size="30" color="#000" className="m-auto" />,
-    color: 'gradient__bar_blue',
+    color: "gradient__bar_blue",
   },
   {
     title: "Blockchain Community Innovation Centres",
     text: "",
     img: img_concerns,
     icon: <CgCommunity size="30" color="#000" className="m-auto" />,
-    color: 'gradient__bar',
+    color: "gradient__bar",
   },
   {
     title: "Collaborative Projects",
@@ -96,24 +102,23 @@ export const ProjectList = [
         img: winpartner,
       },
     ],
-    color: 'gradient__bar_blue',
+    color: "gradient__bar_blue",
   },
   {
     title: "Entrepreneurship training",
     text: "",
     img: img_concerns,
     icon: <MdOutlineSchool size="30" color="#000" className="m-auto" />,
-    color: 'gradient__bar',
+    color: "gradient__bar",
   },
   {
     title: "Hackathons & Incubators",
     text: "",
     img: img_concerns,
     icon: <SiHackthebox size="30" color="#000" className="m-auto" />,
-    color: 'gradient__bar_blue',
+    color: "gradient__bar_blue",
   },
 ];
-
 
 export const PartnershipList = [
   {
@@ -121,7 +126,7 @@ export const PartnershipList = [
     text: "Become a GBWA representative in anywhere you are in the world. Being an ambassador is one of the most efficient way of contributing to the great work we do at Global Blockchain women Alliance. For a successful and effective initiative and project, we must have an active community. <br /> Contact us today to become an ambassador. ",
     img: blackwoman,
     icon: <BiNetworkChart size="30" color="#000" className="m-auto" />,
-    color: 'gradient__bar',
+    color: "gradient__bar",
   },
   {
     title: "Become a mentor",
@@ -130,7 +135,7 @@ export const PartnershipList = [
     actionLink: "https://tinyurl.com/GBWAGIRL",
     img: bementor,
     icon: <VscCommentDiscussion size="30" color="#000" className="m-auto" />,
-    color: 'gradient__bar_blue',
+    color: "gradient__bar_blue",
   },
   {
     title: "Become a tech partner",
@@ -139,7 +144,7 @@ export const PartnershipList = [
     actionLink: "https://tinyurl.com/kidgrammer",
     img: betech,
     icon: <FaRegHandshake size="30" color="#000" className="m-auto" />,
-    color: 'gradient__bar',
+    color: "gradient__bar",
   },
   {
     title: "Sponsor a girl",
@@ -148,7 +153,7 @@ export const PartnershipList = [
     actionLink: "https://tinyurl.com/kidgrammer",
     img: besponsor,
     icon: <RiHandHeartLine size="30" color="#000" className="m-auto" />,
-    color: 'gradient__bar_blue',
+    color: "gradient__bar_blue",
   },
   {
     title: "Become a program sponsor",
@@ -157,16 +162,16 @@ export const PartnershipList = [
     actionLink: "https://tinyurl.com/kidgrammer",
     img: beprogram,
     icon: <HiOutlineSpeakerphone size="30" color="#000" className="m-auto" />,
-    color: 'gradient__bar',
+    color: "gradient__bar",
   },
   {
     title: "Become an education partner",
     text: "Educating women and girls on the Blockchain technology is core for us and we open to welcome education partners onboard as we equip more women and girls around the world.",
     action: "Contact us today",
     actionLink: "https://tinyurl.com/kidgrammer",
-    img: gbeducation,
+    img: girledu,
     icon: <FaRegHandshake size="30" color="#000" className="m-auto" />,
-    color: 'gradient__bar_blue',
+    color: "gradient__bar_blue",
   },
   {
     title: "Become an event organizer",
@@ -175,7 +180,7 @@ export const PartnershipList = [
     actionLink: "https://tinyurl.com/kidgrammer",
     img: beevent,
     icon: <VscOrganization size="30" color="#000" className="m-auto" />,
-    color: 'gradient__bar',
+    color: "gradient__bar",
   },
 ];
 
@@ -186,3 +191,18 @@ export const modalInfo = {
   action: "Sign-up Now",
   actionLink: "https://rb.gy/pjfhgd",
 };
+
+export const Gallerydata = [
+  {
+    title: "Girl Chain Awearness",
+    tag: "training",
+    cover: g1,
+    imgs: [
+      { img: g1, title: "" },
+      { img: g2, title: "" },
+      { img: g3, title: "" },
+      { img: g4, title: "" },
+      { img: g5, title: "" },
+    ],
+  },
+];

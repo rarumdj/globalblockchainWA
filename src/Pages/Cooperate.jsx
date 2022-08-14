@@ -7,8 +7,6 @@ const Cooperate = () => {
   useEffect(() => {
     window.location.replace(
       "https://yunometa.com/",
-      "_blank",
-      "noopener,noreferrer"
     );
     // window.open('https://yunometa.com/', '_blank', 'noopener,noreferrer');
   }, [pathname]);
