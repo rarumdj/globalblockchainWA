@@ -71,7 +71,7 @@ function NavBar() {
         </ul>
         <a
           href={`${pathname}#contact`}
-          className="hidden lg:block py-2 px-4 rounded-md bg-red-600 text-white hover:bg-transparent hover:bg-red-500 hover:transition-all duration-200 ease-in-out">
+          className="hidden lg:block py-2 px-4 rounded-md bg-red-600 text-white hover:bg-red-500 hover:transition-all duration-200 ease-in-out">
           Contact
         </a>
       </div>

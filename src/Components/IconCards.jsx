@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import { blackwoman, imgpreview } from "../assets";
+import { imgpreview } from "../assets";
 import UseProgressiveImg from "./UseProgressiveImg";
 
 function IconCards({ icon, title, slug, color, img }) {
@@ -42,17 +42,18 @@ function IconCards({ icon, title, slug, color, img }) {
       whileTap="animate"
       onClick={() => navigate(slug)}
       className="sm:w-1/2 mb-10 px-4">
-      <div className="rounded-lg md:h-96 h-64 overflow-hidden">
+      <div className="relative pb-[55%] rounded-lg overflow-hidden">
         <img
-          alt="content"
-          className="object-cover object-center h-full w-full"
           src={src}
+          alt="content"
           style={{
             filter: blur ? "blur(20px)" : "none",
             transition: blur ? "none" : "filter 0.3s ease-out",
           }}
+          className="absolute inset-0 m-auto w-full rounded-lg h-full object-cover"
         />
       </div>
+
       <h2 className="title-font md:text-2xl font-medium text-[#0B045A] mt-6 mb-3">
         {title}
       </h2>
