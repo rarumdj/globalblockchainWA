@@ -33,7 +33,7 @@ function Banner() {
             />
             <div className="absolute right-0 top-0 mt-[1px] p-[2px]">
               <a
-                href="https://tinyurl.com/GBWAGIRL"
+                href="https://t.me/+fr1v7ERzLns5YTk0"
                 target="_blank"
                 className="rounded-3xl md:min-w-[9rem] inline-flex justify-center text-[#042c54] bg-white border-0 py-2.5 px-6 focus:outline-none text-md"
                 rel="noreferrer">

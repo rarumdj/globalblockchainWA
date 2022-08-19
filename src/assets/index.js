@@ -40,3 +40,6 @@ export { default as g3 } from "./g3.jpg";
 export { default as g4 } from "./g4.jpg";
 export { default as g5 } from "./g5.jpg";
 export { default as girledu } from "./girledu.jpg";
+export { default as educationforpurpose } from "./educationforpurpose.png";
+export { default as girlchainimage } from "./girlcainimage.png";
+export { default as blockchainedu } from "./blockchainedu.png";
