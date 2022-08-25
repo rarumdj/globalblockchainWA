@@ -6,9 +6,10 @@ const PromptMessage = () => {
   const [OpenModal, setOpenModal] = useState(false);
 
   useEffect(() => {
-    window.setTimeout(function () {
-      setOpenModal(true);
-    }, 5000);
+    if (modalInfo?.title)
+      window.setTimeout(function () {
+        setOpenModal(true);
+      }, 5000);
   }, []);
 
   return (

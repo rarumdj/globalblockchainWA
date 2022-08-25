@@ -23,7 +23,7 @@ const StaffDetails = [
     imageBlur: roliBlur,
   },
   {
-    name: "Daba Alli",
+    name: "Daba Ali",
     position: "Executive Admin officer",
     image: ali,
     imageBlur: aliBlur,

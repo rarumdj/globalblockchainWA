@@ -204,17 +204,17 @@ export const PartnershipList = [
 ];
 
 export const modalInfo = {
-  img: girlchainprogram,
-  text: "Girl Chain is a 4-week Free coding camp for girls between the ages 8 and 16. GIRLCHAIN will work to bring fun, educational workshops and camps to garner the interest of young minds.",
-  title: "Girls Chain Coding Camp",
-  action: "Sign-up Now",
-  actionLink: "https://rb.gy/pjfhgd",
+  // img: girlchainprogram,
+  // text: "Girl Chain is a 4-week Free coding camp for girls between the ages 8 and 16. GIRLCHAIN will work to bring fun, educational workshops and camps to garner the interest of young minds.",
+  // title: "Girls Chain Coding Camp",
+  // action: "Sign-up Now",
+  // actionLink: "https://rb.gy/pjfhgd",
 };
 
 export const Gallerydata = [
   {
-    title: "Girl Chain Awearness",
-    tag: "training",
+    title: "Kidgrammer",
+    tag: "kidgrammer",
     cover: g1,
     imgs: [
       { img: g1, title: "" },
