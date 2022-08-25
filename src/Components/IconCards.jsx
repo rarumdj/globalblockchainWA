@@ -41,7 +41,7 @@ function IconCards({ icon, title, slug, color, img }) {
       whileHover="animate"
       whileTap="animate"
       onClick={() => navigate(slug)}
-      className="mb-10 px-4">
+      className="mb-10 px-4 cursor-pointer">
       <div className="relative pb-[55%] rounded-lg overflow-hidden">
         <img
           src={src}
